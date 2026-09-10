@@ -1,0 +1,563 @@
+/* ==================== CLEAN MOBILE RESPONSIVE STYLES ==================== */
+@media (min-width: 769px) {
+    .mobile-view { display: none !important; }
+}
+
+@media (max-width: 768px) {
+    /* Is solid rule se mobile screen par desktop ka sab kuch pakka chhup jayega */
+    .desktop-view, .d-header, header.d-header { 
+        display: none !important; 
+    }
+
+      /* Purani line 12 se 21 tak hata kar sirf ye daalein */
+    .mobile-view { 
+        display: block !important; 
+        background-color: #fcf8f8 !important;
+        position: static !important;  /* Isse lock tutega */
+        overflow-y: auto !important;  /* Isse scroll chalu hoga */
+        height: auto !important;
+    }
+
+    /* Mobile Header */
+    .m-header { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 15px; 
+        background: #800020; 
+        color: white; 
+        position: fixed;
+        top: 0;
+        left: 0;            /* स्क्रीन के बिल्कुल बाईं तरफ से शुरू होगा */
+        width: 100%;        /* पूरी स्क्रीन को कवर करेगा */
+        box-sizing: border-box; /* पैडिंग की वजह से हेडर स्क्रीन से बाहर नहीं भागेगा */
+        z-index: 2000;
+    }
+
+/* ==================== CLEAN MOBILE RESPONSIVE STYLES ==================== */
+@media (min-width: 769px) {
+    .mobile-view { display: none; }
+}
+
+@media (max-width: 768px) {
+    .mobile-view { 
+        display: block; 
+        background-color: #fcf8f8;
+    }
+    
+    /* Mobile Header */
+ 
+    .m-header .logo { 
+    color: #D4AF37; 
+    font-size: 25px; 
+    font-weight: bold; 
+    display: flex;         /* लोगो और टेक्स्ट को एक लाइन में लाने के लिए */
+    align-items: center;   /* दोनों को ऊपर-नीचे से बीच में रखने के लिए */
+    gap: 10px;             /* लोगो और टेक्स्ट के बीच की दूरी */
+}
+
+.m-header .logo span {
+    color: #D4AF37 !important; /* इससे गोल्डन कलर हट जाएगा और सफेद हो जाएगा */
+}
+/* लोगो इमेज का साइज सेट करने के लिए */
+.m-header .logo img {
+   
+    width: 60px;           /* मोबाइल के हिसाब से सही साइज */
+    height: 30px; 
+    
+    /* इमेज खींचेगी नहीं, सही दिखेगी */
+}
+
+    .m-menu-btn { background: none; border: none; color:#D4AF37; font-size: 24px; }
+    
+    /* Mobile Hero Slider Box */
+   .m-split-hero {
+    position: relative;
+    width: 100%;
+    height: 45vh; 
+    margin-top: 63px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end; /* Text ko neeche bhejne ke liye */
+    padding-bottom: 25px;  /* Sunder gap ke liye */
+}
+
+
+    /* Mobile Slider Photos Styling */
+    .m-slide-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        z-index: 1;
+    }
+
+    .m-slide-img.m-active-slide {
+        opacity: 1;
+        z-index: 2;
+    }
+
+    /* MOBILE BANNER OVERLAY BRIGHTNESS FIX */
+.m-slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Isse mobile par bhi kaala parda halka ho jayega aur photo chamakne lagegi */
+    background: rgba(0, 0, 0, 0.2) !important;
+    z-index: 3;
+}
+
+/* Slider ke upar ka text jo chup gaya tha use wapas laana */
+.m-hero-text-only {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    color: #ffffff; 
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.m-hero-text-only h1 {
+    font-size: 36px !important;
+    color: #ffffff !important; /* Isse color ekdum solid white ho jayega */
+    font-weight: bold !important;
+    /* Parchaai (shadow) ko gehra kiya taaki photo bright hone par bhi text 100% saaf dikhe */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9) !important; 
+}
+
+.m-hero-text-only p {
+    font-size: 14px !important;
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) !important;
+}
+
+
+    /* Naya Registration Block jo slider ke niche rahega */
+    .m-reg-section {
+        padding: 25px 15px;
+        background-color: #fcf8f8;
+    }
+
+    .m-reg-box { 
+        background: white; 
+        padding: 20px; 
+        border-radius: 12px; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        border-top: 4px solid #800020; /* Gold ki jagah classy burgundy border */
+    }
+
+    .m-reg-box h2 {
+        font-size: 20px;
+        color: #800020;
+        margin-bottom: 2px;
+    }
+
+    .m-reg-box p {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 8px;
+    }
+
+    .m-reg-box input, .m-reg-box select { 
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ddd; 
+        border-radius: 6px; 
+        font-size: 15px;
+        background-color: #fafafa;
+        outline: none;
+        text-align: left;
+    }
+
+    .m-btn-search { 
+        width: 100%; 
+        background: linear-gradient(135deg, #800020, #4a0012);
+        color: white; 
+        border: none; 
+        padding: 14px; 
+        font-weight: bold; 
+        border-radius: 6px; 
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(128, 0, 32, 0.2);
+    }
+
+    /* Baki bache huye common sections */
+/* Baki bache huye common sections */
+.section-container { 
+    padding: 40px 15px; 
+    text-align: center; 
+}
+
+.section-title { 
+    font-size: 24px; 
+    color: #800020; 
+}
+
+.story-grid, .plans-grid, .services-grid, .blog-grid, .contact-butt {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+}
+
+.story-card, .plan-card, .service-box, .blog-card {
+    width: 100% !important;
+}
+
+
+}
+
+/* ==================== MOBILE SIDE DRAWER MENU DESIGN ==================== */
+@media (max-width: 768px) {
+    /* Side Menu Box (Shuru me right side me chupa rahega) */
+    .m-side-drawer {
+        position: fixed !important;
+        top: 0 !important;
+        right: -280px !important; /* Screen ke bahar chupa hua */
+        width: 280px !important;
+        height: 100vh !important;
+        background-color: #ffffff !important;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1) !important;
+        z-index: 3000 !important;
+        transition: right 0.4s ease !important; /* Smooth aane ka animation */
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Jab menu active ho to use screen par lana */
+    .m-side-drawer.open-drawer {
+        right: 0 !important;
+    }
+
+    /* Menu ka Header (Burgundy Color) */
+    .drawer-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 20px !important;
+        background-color: #800020 !important;
+        color: white !important;
+    }
+
+    .close-drawer-btn {
+        background: none !important;
+        border: none !important;
+        color: white !important;
+        font-size: 22px !important;
+        cursor: pointer !important;
+    }
+
+    /* Links ki styling */
+    .m-drawer-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 20px !important;
+        gap: 15px !important;
+    }
+
+    .m-drawer-nav a {
+        text-decoration: none !important;
+        color: #333333 !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        padding: 10px 0 !important;
+        border-bottom: 1px solid #eeeeee !important;
+    }
+
+    .m-btn-drawer-login {
+        background-color: #800020 !important;
+        color: white !important;
+        border: none !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+        border-radius: 6px !important;
+        margin-top: 15px !important;
+        cursor: pointer !important;
+    }
+
+    /* Black Translucent Backdrop Overlay */
+    .drawer-overlay {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        z-index: 2999 !important;
+        display: none !important;
+    }
+
+    .drawer-overlay.show-overlay {
+        display: block !important;
+    }
+}
+
+/* MOBILE PREVIEWS FOR 10 WEDDING SERVICES */
+@media (max-width: 768px) {
+    .services-premium-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+    .service-premium-box {
+        width: 92% !important; /* Phone screen par poori width lekar aaram se khulega */
+        margin: 0 auto !important;
+        padding: 20px 15px !important;
+    }
+    .sammelan-banner-box {
+        width: 92% !important;
+        padding: 20px !important;
+    }
+    .sammelan-banner-box h3 {
+        font-size: 18px !important;
+    }
+}
+/* MOBILE FIX FOR TOP PHOTOS */
+
+    .sammelan-top-photos-row {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+    .sammelan-top-img {
+        width: 92% !important;
+        max-width: 100% !important;
+        height: 180px !important;
+    }
+}
+
+/* Mobile Optimization */
+.why-choose-us {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 24px;
+}
+
+.section-desc {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Mobile par saare boxes ek ke niche ek single column me ho jayenge */
+.stats-container {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+}
+
+.stat-box {
+    padding: 20px;
+}
+
+.stat-icon-wrapper {
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.stat-number {
+    font-size: 20px;
+}
+
+.stat-text {
+    font-size: 14px;
+}
+
+/* Mobile Optimization for FAQ */
+.faq-section {
+    padding: 40px 15px;
+}
+
+.faq-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.faq-question {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.faq-answer p {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+}
+
+/* Website Theme Matched Suggestion Form - Mobile */
+.suggestion-section {
+    margin: 40px 15px;
+    padding: 25px 20px;
+    border-radius: 10px;
+}
+
+.suggestion-title {
+    font-size: 22px;
+}
+
+.suggestion-subtitle {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group input, .form-group select, .form-group textarea {
+    padding: 12px 15px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    padding: 14px 20px;
+    font-size: 15px;
+}
+
+/* Premium Profile Lock Modal Styling */
+.profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-modal-content {
+    background: #800020; /* आपकी थीम का गहरा मैरून रंग */
+    border: 2px solid #D4AF37; /* गोल्डन बॉर्डर */
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    color: #cccccc;
+    cursor: pointer;
+}
+.close-modal:hover {
+    color: #D4AF37;
+}
+.lock-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.profile-modal-content h3 {
+    color: #D4AF37; /* गोल्डन हेडिंग */
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.modal-text-hindi {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.modal-text-english {
+    font-size: 13px;
+    color: #ffcccc;
+    margin-bottom: 25px;
+}
+.access-form {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(179, 134, 43, 0.3);
+}
+.access-form h4 {
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.access-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #cccccc;
+    color: #111;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.access-form button {
+    width: 100%;
+    background: #D4AF37;
+    color: #111;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.view-plans-btn {
+    display: inline-block;
+    background: transparent;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+.view-plans-btn:hover {
+    background: #D4AF37;
+    color: #111;
+}
+
+/* 🌟 MOBILE VIEW PROFILES FINAL FIX 🌟 */
+@media (max-width: 768px) {
+    /* मुख्य डिब्बे को फ्लेक्स बनाकर नीचे टूटने से रोकना */
+    .profile-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: flex-start !important;
+        overflow-x: auto !important;
+        width: 100% !important;
+    }
+    
+    /* 🃏 कार्ड्स को पिचकने से रोकना और सही चौड़ाई देना */
+    .profile-card {
+        flex: 0 0 280px !important;      /* यह लाइन कार्ड को पिचकने नहीं देगी */
+        min-width: 280px !important;     /* इसकी चौड़ाई 280px फिक्स रखेगी */
+        max-width: 280px !important;
+        display: block !important;
+    }
+}
+    

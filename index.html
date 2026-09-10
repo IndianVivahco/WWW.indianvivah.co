@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title: Jo Google me sabse upar dikhega -->
+    <title>Indian Vivah Matrimony - Sahi Rishta, Sachha Bandhan | Free Matrimonial Site</title>
+    
+    <!-- Description: Google search result ke niche ka text (Hinglish aur Hindi mix) -->
+    <meta name="description" content="Indian Vivah Matrimony par sabhi samaj ke liye sahi jeevansathi dhundhein. Shadi ke liye ladka ladki ke rishte, vivah sammelan aur free registration ki sabse bharosemand website.">
+    
+    <!-- Keywords: Jo log Google par alag-alag bhasha me search karte hain -->
+    <meta name="keywords" content="Indian Vivah Matrimony, matrimony website, shadi ke liye rishte, vivah sammelan, free matrimony site, shadi ke liye ladki chahiye, dulha dulhan matching, hindi matrimony, sarvjaati vivah, perfect life partner India, shaadi ke rishte, manglik non manglik match">
+    
+    <!-- Author & Robots -->
+    <meta name="author" content="Indian Vivah Matrimony">
+    <meta name="robots" content="index, follow">
+
+    <!-- Stylesheets Links (Aapki purani lines) -->
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<Body>
+    <!-- ==================== DESKTOP LAYOUT (SPLIT HERO BANNER) ==================== -->
+    <div class="desktop-view">
+        <header class="d-header">
+            <div class="logo">Indian Vivah <span>Matrimony</span></div>
+            <nav class="d-nav">
+                <a href="#home">Home</a>
+               
+<a href="javascript:void(0);" onclick="checkProfileAccess()">Profiles</a>
+
+                <a href="#plans">Membership</a>
+                <a href="#services">Services</a>
+            
+                <button class="btn-login">Login</button>
+            </nav>
+        </header>
+
+        <!-- New Professional Split Hero Section -->
+        
+                <!-- Split Hero Section with Local Images -->
+        <section class="d-split-hero" id="home">
+            
+            <!-- LEFT HALF: Automatic Image Slider -->
+            <div class="hero-left-slider">
+                <!-- Internet links hatakar seedhe folder ki photos set kar di hain -->
+                <img src="slide1.jpg" alt="Slide 1" class="slide-img active-slide">
+                <img src="slide2.jpg" alt="Slide 2" class="slide-img">
+                <img src="slide3.jpg" alt="Slide 3" class="slide-img">
+                <img src="slide4.jpg" alt="Slide 4" class="slide-img">
+                
+                <div class="slider-overlay"></div>
+                <div class="slider-text">
+                    <h1>Sahi Rishta, Sachha Bandhan</h1>
+                    <p>Your perfect partner is just a few clicks away!</p>
+                </div>
+            </div>
+
+            <!-- RIGHT HALF: Premium Registration Box -->
+            <div class="hero-right-reg">
+                <div class="reg-card">
+                    <h2>Find Your Soulmate</h2>
+                    <p>Register Free & Create Your Profile</p>
+                    <form class="quick-reg-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        
+                        <div class="form-row split-row">
+                            <select required>
+                                <option value="">Looking For</option>
+                                <option>Bride (Ladki)</option>
+                                <option>Groom (Ladka)</option>
+                            </select>
+                            <input type="text" placeholder="Age" required>
+                        </div>
+                        <div class="form-row split-row">
+                            <select required>
+                                <option value="">Religion</option>
+                                <option>Hindu</option>
+                                <option>Muslim</option>
+                                <option>Sikh</option>
+                                <option>Christian</option>
+                                <option>All / Sarvjaati</option>
+                            </select>
+                            <input type="text" placeholder="Education">
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Mobile Number (+91)" required>
+                        </div>
+
+                    <div class="form-row">
+                            <input type="Address" placeholder="Present Address" required>
+                        </div>
+                        <button type="submit" class="btn-reg-submit">REGISTER FREE</button>
+                    </form>
+                    <!-- Is line me a tag ke andar id="linkToLoginFromReg" jodh dijiye -->
+<p class="reg-footer-text">Already a member? <a href="#" id="linkToLoginFromReg">Login Now</a></p>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+           <!-- ==================== MOBILE LAYOUT (PHONE KE LIYE) ==================== -->
+    <div class="mobile-view">
+                <!-- Mobile Header with Active Side Menu -->
+        <header class="m-header">
+            <div class="logo">
+    <img src="images/logo.jpg" alt="Logo"> 
+    <span>Indian Vivah</span>
+</div>
+
+            <!-- Menu button par click event lagane ke liye id jodi hai -->
+            <button class="m-menu-btn" id="mobile-menu-trigger">☰</button>
+
+            <!-- Naya Mobile Slide Menu -->
+            <div class="m-side-drawer" id="mobile-drawer">
+                <div class="drawer-header">
+                    <h3>Menu</h3>
+                    <button class="close-drawer-btn" id="mobile-menu-close">✕</button>
+                </div>
+                <nav class="m-drawer-nav">
+                    <a href="#m-home">Home</a>
+                   
+                    <a href="javascript:void(0);" onclick="checkProfileAccess()">Profiles</a>
+
+                    <a href="#plans">Membership</a>
+                    <a href="#services">Services</a>
+                    
+                    <button class="m-btn-drawer-login">Login</button>
+                </nav>
+            </div>
+            <!-- Menu ke piche ka dhundla parda -->
+            <div class="drawer-overlay" id="mobile-drawer-overlay"></div>
+        </header>
+
+
+        <!-- PART 1: Sirf Photo Slider (Iske andar form nahi rahega, isliye text saaf dikhega) -->
+        <section class="m-split-hero" id="m-home">
+            <img src="slide1.jpg" alt="Slide 1" class="m-slide-img m-active-slide">
+            <img src="slide2.jpg" alt="Slide 2" class="m-slide-img">
+            <img src="slide3.jpg" alt="Slide 3" class="m-slide-img">
+            <img src="slide4.jpg" alt="Slide 4" class="m-slide-img">
+            
+            <div class="m-slider-overlay"></div>
+
+            <!-- CSS target karne ke liye humne ise m-hero-text-only rakha h jo aapke CSS me h -->
+            <div class="m-hero-text-only">
+                <h1>Find Your Perfect Match</h1>
+                <p>Trusted by all communities</p>
+            </div>
+        </section>
+
+        <!-- PART 2: Registration Form (Slider ke thik baad niche) -->
+        <section class="m-reg-section">
+            <div class="m-reg-box">
+                <h2>Quick Registration</h2>
+                <p>Create profile in just 1 minute</p>
+               <input type="text" id="mRegName" placeholder="Full Name" required>
+<select id="mRegLookingFor" required>
+    <option value="" disabled selected>Looking For</option>
+    <option value="Bride">Bride</option>
+    <option value="Groom">Groom</option>
+</select>
+<input type="text" id="mRegAge" placeholder="Age" required>
+<input type="text" id="mRegEducation" placeholder="Education" required>
+<input type="tel" id="mRegMobile" placeholder="Mobile Number" required>
+<input type="text" id="mRegAddress" placeholder="Present Address" required>
+
+<!-- 🌟 बटन में onclick जोड़ दिया है ताकि क्लिक करते ही सीधे व्हाट्सऐप पर मैसेज जाए -->
+<button type="button" onclick="sendMobileRegToWhatsApp()" class="m-btn-search">REGISTER FREE</button>
+
+            </div>
+        </section>
+    </div> <!-- MOBILE VIEW CLOSED -->
+
+
+    <!-- ==================== COMMON SECTIONS ==================== -->
+    
+    <!-- Why Indian Vivah Section -->
+<section class="why-choose-us">
+    <h1 class="section-title">Why Indian Vivah?</h1>
+    <p class="section-desc">
+        "Indian Vivah Matrimony, backed by the trusted matrimony.com group, is a premier leader in online matrimony services for Indians globally. With over 10 years of deep expertise in crafting premium matchmaking services, we proud ourselves in offering a highly exclusive database of trusted and premium matches tailored just for you."
+    </p>
+
+    <!-- Stats Layout Grid -->
+    <div class="stats-container">
+        
+        <!-- Box 1 -->
+        <div class="stat-box">
+            <div class="stat-icon-wrapper">
+                <!-- Agar aapke paas icon ki image hai toh aise lagayein: -->
+                <!-- <img src="images/expertise-icon.png" alt="Expertise"> -->
+                <span>⏳</span> 
+            </div>
+            <div class="stat-info">
+                <h3 class="stat-number">10+</h3>
+                <p class="stat-text">Years of Expertise</p>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="stat-box">
+            <div class="stat-icon-wrapper">
+                <span>👥</span>
+            </div>
+            <div class="stat-info">
+                <h3 class="stat-number">50,000+</h3>
+                <p class="stat-text">Indian Vivah Customers</p>
+            </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="stat-box">
+            <div class="stat-icon-wrapper">
+                <span>👔</span>
+            </div>
+            <div class="stat-info">
+                <h3 class="stat-number">20+</h3>
+                <p class="stat-text">Marriage Counselors</p>
+            </div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="stat-box">
+            <div class="stat-icon-wrapper">
+                <span>🔒</span>
+            </div>
+            <div class="stat-info">
+                <h3 class="stat-number">100%</h3>
+                <p class="stat-text">Confidential</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    
+    <section class="section-container" id="profiles">
+        <h2 class="section-title">Premium Featured Profiles</h2>
+        <p class="section-subtitle">Upgrade to premium to see full profile details.</p>
+        <!-- 🌟 सिर्फ इस एक लाइन को बदलें, इससे डेस्कटॉप बिल्कुल सुरक्षित रहेगा 🌟 -->
+<!-- 🌟 मुख्य लाइन को हटाकर इस फाइनल कोड से बदलें, इससे कार्ड्स का लंबा होना तुरंत रुक जाएगा 🌟 -->
+<div class="profile-grid" style="display: flex !important; flex-direction: row !important; overflow-x: auto !important; overflow-y: hidden !important; gap: 20px !important; padding: 15px !important; scroll-snap-type: x mandatory !important; width: 100% !important; box-sizing: border-box !important; flex-wrap: nowrap !important; align-items: flex-start !important; -webkit-overflow-scrolling: touch;">
+
+
+
+            <div class="profile-card">
+                <img src="image1.jpg" alt="Profile">
+                <h3>Pooja Sharma (25 Yrs)</h3>
+                <p>B.Tech | Software Engineer</p>
+                <p>indore, Madhya Pradesh</p>
+                <button class="btn-view-profile">View Full Profile</button>
+            </div>
+            <div class="profile-card">
+                <img src="image2.jpg" alt="Profile">
+                <h3>Rahul Verma (28 Yrs)</h3>
+                <p>MBA | Business Analyst</p>
+                <p>indore, Madhya Pradesh</p>
+                <button class="btn-view-profile">View Full Profile</button>
+            </div>
+
+            <div class="profile-card">
+                <img src="image3.jpg" alt="Profile">
+                <h3>Manoj Sen (22 Yrs)</h3>
+                <p>12th | Business </p>
+                <p>Bhopal, Madhya Pradesh</p>
+                <button class="btn-view-profile">View Full Profile</button>
+            </div>
+
+            <div class="profile-card">
+                <img src="image4.jpg" alt="Profile">
+                <h3>Sapna Meena (23 Yrs)</h3>
+                <p>12th | Not Working</p>
+                <p>Dhar, Madhya Pradesh</p>
+                <button class="btn-view-profile">View Full Profile</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: AI LOVE METER (Dono layout ke liye fix) -->
+    <section class="section-container ai-section" id="ai-meter">
+        <h2 class="section-title">AI Match & Love Percentage Meter</h2>
+        <p class="section-subtitle">Check your instant compatibility score just for fun!</p>
+        <div class="love-meter-box">
+            <div class="input-group">
+                <input type="text" id="yourName" placeholder="Your Name">
+                <input type="text" id="partnerName" placeholder="Partner Name">
+            </div>
+            <button type="button" id="btn-calculate">Calculate Match %</button>
+            <div id="love-result" class="love-result"></div>
+        </div>
+    </section>
+        <!-- ==================== SECTION 4 SE FOOTER TAK KA CODE ==================== -->
+
+    <!-- Section 4: Success Stories -->
+    <section class="section-container bg-light">
+        <h2 class="section-title">Success Stories</h2>
+        <div class="story-grid">
+            <div class="story-card">
+                 <img src="couple1.jpg" alt="Amit and Shruti" class="story-img">
+                <p>"Hum dono ki mulakat Indian Vivah par hui. Bohot hi achha experience rha!"</p>
+                <h4>- Amit & Shruti</h4>
+            </div>
+            <div class="story-card">
+                 <img src="couple2.jpg" alt="Vikram & Priya" class="story-img">
+                <p>"Sabhi samaj ke liye ye ek behtareen platform hai. Thank you so much!"</p>
+                <h4>- Vikram & Priya</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Membership Plans -->
+    <section class="section-container" id="plans">
+        <div class="section-title" style="margin-bottom: 60px;">Our Membership Plans </div>
+        <div class="plans-grid">
+            <!-- Silver -->
+            <div class="plan-card">
+                <h3>Silver Plan</h3>
+                <div class="price">₹3,500<span> / 3 Months</span></div>
+                <ul>
+                    <li>✓ Send 10 Interests</li>
+                    <li>✓ View 10 Phone Numbers</li>
+                    <li>✗ Video Calling Not Available</li>
+                </ul>
+                <button class="btn-plan">Choose Plan</button>
+            </div>
+            <!-- Gold -->
+            <div class="plan-card premium-plan">
+                <div class="badge">Most Popular</div>
+                <h3>Gold Plan</h3>
+                <div class="price">₹6,000<span> / 6 Months</span></div>
+                <ul>
+                    <li>✓ Send 25 Interests</li>
+                    <li>✓ View 25 Phone Numbers</li>
+                    <li>✓ Chat Directly</li>
+                </ul>
+                <button class="btn-plan">Choose Plan</button>
+            </div>
+            <!-- Platinum -->
+            <div class="plan-card">
+                <h3>Platinum Plan</h3>
+                <div class="price">₹10,000<span> / 12 Months</span></div>
+                <ul>
+                    <li>✓ Everything Unlimited</li>
+                    <li>✓ Dedicated Relationship Manager</li>
+                    <li>✓ Profile Highlighted on Top</li>
+                </ul>
+                <button class="btn-plan">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Wedding Services Marketplace -->
+    
+        <!-- Section 6: Wedding Services Marketplace (10 Premium Services) -->
+    <section class="section-container bg-light" id="services">
+        <h2 class="section-title">Wedding Services & Sammelan</h2>
+        <p class="section-subtitle">Hum sirf rishte hi nahi banate, aapki shadi ka har ek intezam bhi behtareen karte hain.</p>
+        
+         <div class="sammelan-top-photos-row">
+            <img src="wedding.jpg" alt="Wedding Showcase" class="sammelan-top-img" >
+            <img src="sammelan.jpg" alt="Sammelan Showcase" class="sammelan-top-img">
+        </div>
+        <!-- Sarvjaati Sammelan Banner Card -->
+        <div class="sammelan-banner-box">
+            <div class="sammelan-badge">Upcoming Event</div>
+            <h3>🤝 Sarvjaati Vivah Sammelan 🤝</h3>
+            <p>Kam kharch aur poore dhoom-dham se shadi ke liye hamare aane wale sarvjaati sammelan me aaj hi register karein.</p>
+            <button class="btn-sammelan-reg">Register For Sammelan →</button>
+        </div>
+
+        <!-- 10 Premium Wedding Services Grid -->
+        <!-- 🌟 सर्विसेज ग्रिड की मुख्य लाइन को हटाकर इसे पेस्ट करें 🌟 -->
+<!-- 🌟 इनलाइन कोड को बदलकर अब सिर्फ इतना रखें 🌟 -->
+<div class="services-grid" style="max-height: 500px !important; overflow-y: auto !important; flex-wrap: wrap !important; padding: 10px !important;">
+
+
+            
+            <!-- Service 1 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                    <img src="wedding venue.jpg" alt="Wedding Venues" >
+                </div>
+                <h3>Wedding Venues</h3>
+                <p>Shadi ke liye sabse behtareen Banquet Halls, Marriage Lawns aur Luxury Resorts ki direct booking.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+ <img src="wedding planners.jpg" alt="Wedding planners" >
+                </div>
+                <h3>Wedding Planners</h3>
+                <p>Shadi ka har chota-bada kaam bina kisi tanav ke manage karne ke liye expert planners ki team.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                    <img src="Theme Decoration.jpg" alt="Theme Decoration" >
+                </div>
+                <h3>Theme Decoration</h3>
+                <p>Grand Stage, Royal Mandap, aur Haldi-Mehendi ke liye trendy aur aakarshit floral decorations.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                <img src="images/catering.jpg" alt="Premium Catering" >
+                </div>
+                <h3>Premium Catering</h3>
+                <p>Desi aur videshi khane ka swadist menu, live food counters aur professional catering staff.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                    <img src="images/photography.jpg" alt="Photography" >
+                </div>
+                <h3>Cinematic Photography</h3>
+                <p>Pre-wedding shoots, candid photography aur shadi ki high-definition cinematic videos aur reels.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                    <img src="images/livestream.jpg" alt="live" >
+                </div>
+                <h3>Live Streaming</h3>
+                <p>Aapki shadi ka online seedha prasharan (Live Broadcast) door baithe rishtedaron ke liye.</p>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                     <img src="images/dj.jpg" alt="DJ" >
+                </div>
+                <h3>Entertainment & DJ</h3>
+                <p>Sangeet night ke liye top-class Sound System, DJ, Dance Choreographers aur Live Singers.</p>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                    <img src="images/mehandi Artist.jpg" alt="Mehandi" >
+                </div>
+                <h3>Makeup & Mehendi</h3>
+                <p>Dulhan aur parivar ke liye certified Bridal Makeup Artists aur expert Mehendi designers.</p>
+            </div>
+
+            
+
+            <!-- Service 10 -->
+            <div class="service-premium-box">
+                <div class="service-icon-logo">
+                     <img src="images/logistic.jpg" alt="Logistics" >
+                </div>
+                <h3>Guest Logistics</h3>
+                <p>Mehmaanon ke aane-jaane ke liye AC Buses, Luxury Cars aur Baarat ke liye vintage gaadiyan.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 7: Matrimony Blog -->
+    <section class="section-container" id="blog">
+        <h2 class="section-title">Matrimony Blog & Tips</h2>
+        <div class="blog-grid">
+                 
+    <div class="blog-card">
+    <h4>Rishto ki samaj kaise badhayein?</h4>
+    <p>
+        Ek acche jeevansathi ka chunav karte samay kin baaton ka dhyan rakhna chahiye...
+        <!-- छुपा हुआ कंटेंट -->
+        <span id="more-text" style="display: none;">
+            <br><br>
+            1. <strong>Aapsi Samaj:</strong> Dono ke vichar aur jeevan ke lakshya milne chahiye.<br>
+            2. <strong>Aadar aur Samman:</strong> Ek dusre ki bhavnaon aur pariwar ka samman jaroori hai.<br>
+            3. <strong>Achhi Baatchit:</strong> Apni baat khulkar kehne aur dusre ki baat sunne ki aadat.<br>
+            4. <strong>Bharosa:</strong> Kisi bhi majboot rishte ki neev bharosa hi hoti hai.<br>
+            5. <strong>Aarthik Soch:</strong> Paise ke kharch aur bachat ko lekar dono ke vichar milne chahiye.<br>
+            6. <strong>Pariwar ka Swabhav:</strong> Ek dusre ke parivar ke rehan-sehan aur sanskaron ko samjhein.<br>
+            7. <strong>Gusse par Kabu:</strong> Gusse mein galat shabd na bolne wale sathi ka chunav karein.<br>
+            8. <strong>Aatmanirbharta:</strong> Sathi ka dimagi aur aarthik roop se majboot hona jaroori hai.<br>
+            9. <strong>Badlav ki Taiyari:</strong> Shadi ke baad aane wale badlavon ko apnane ki samajh honi chahiye.<br>
+            10. <strong>Pasand-Napasand:</strong> Ek dusre ki khushi aur pasand ka dhyan rakhna jaroori hai.
+
+        </span>
+    </p>
+    
+    <!-- <a> की जगह अब हम <button> इस्तेमाल कर रहे हैं ताकि पेज ऊपर न भागे -->
+    <button id="read-more-btn" onclick="toggleText()" style="background: none; border: none; color: #007bff; cursor: pointer; font-size: 16px; padding: 0; text-decoration: underline;">Read More</button>
+</div>
+
+<div class="blog-card">
+    <h4>Vivahik jeevan ko khushhal kaise banayein?</h4>
+    <p>
+        Shadi ke baad aapsi talmel aur bharosa banane ke aasan tarike...
+        <!-- दूसरा छुपा हुआ कंटेंट -->
+        <span id="more-text-2" style="display: none;">
+            <br><br>
+            1. <strong>Waqt bitayein:</strong> Rozana ek dusre ke liye thoda samay jaroor nikalein.<br>
+            2. <strong>Galtiyan maaf karein:</strong> Purani baaton ko pakad kar na baithein, maaf karna seekhein.<br>
+            3. <strong>Ek dusre ki madad:</strong> Ghar ke kaamon aur zimmedariyon mein ek dusre ka haath batayein.<br>
+            4. <strong>Chhoti khushiyan:</strong> Ek dusre ko bina kisi moke ke chhote surprises ya tohfe dein.
+       <br>
+                   5. <strong>Pariwar ko Samman:</strong> Ek dusre ke mata-pita aur parivar ko pura aadar dein.<br>
+            6. <strong>Milkar Faisle:</strong> Ghar ka koi bhi bada faisla dono milkar aapsi salah se karein.<br>
+            7. <strong>Purani Baatein Bhulein:</strong> Beete hue kal ki jhagdo wali baaton ko baar-baar beech mein na layein.<br>
+            8. <strong>Prashansa Karein:</strong> Ek dusre ke achhe kaamon ki taarif karna kabhi na bhoolein.<br>
+            9. <strong>Space Dein:</strong> Rishte mein thodi niji aazadi (personal space) dena bhi jaroori hai.<br>
+            10. <strong>Sehat ka Dhyan:</strong> Ek dusre ki mansik aur sharirik sehat ka poora khyal rakhein.
+
+        </span>
+    </p>
+    
+    <!-- Dusra Button -->
+    <button id="read-more-btn-2" onclick="toggleText2()" style="background: none; border: none; color: #007bff; cursor: pointer; font-size: 16px; padding: 0; text-decoration: underline;">Read More</button>
+</div>
+  
+        </div> 
+        <!-- /yha blog grid close ho rha hai / -->
+<!-- Community Suggestion Form Section -->
+<div class="suggestion-section">
+    <h3 class="suggestion-title">Share Your Thoughts & Marriage Tips</h3>
+    <p class="suggestion-subtitle">क्या आपके पास भी सफल वैवाहिक जीवन से जुड़े कोई विचार या टिप्स हैं? हमारे साथ साझा करें!</p>
+    
+    <form id="communityForm" onsubmit="handleFormSubmit(event)">
+        <div class="input-group">
+            <input type="text" id="userName" placeholder="आपका नाम (Your Name)" required>
+            <!-- <input type="email" id="userEmail" placeholder="आपकी ईमेल (Email - सुरक्षित रहेगी)" required> -->
+        </div>
+        
+        <div class="form-group">
+            <select id="shareType" required>
+                <option value="" disabled selected>आप क्या साझा करना चाहते हैं? (Select Type)</option>
+                <option value="Tip">शादी के लिए महत्वपूर्ण टिप्स (Marriage Tip)</option>
+                <option value="Anubhav">अपना व्यक्तिगत अनुभव (Personal Experience)</option>
+                <option value="Vichar">रिश्तों पर अपने विचार (General Thoughts)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <textarea id="userMessage" rows="5" placeholder="यहाँ अपने विचार या टिप्स विस्तार से लिखें..." required></textarea>
+        </div>
+        
+        <div class="form-submit">
+            <button type="submit" class="submit-btn">Submit Your Thoughts</button>
+        </div>
+    </form>
+</div>
+
+    </section>
+
+
+<!-- Indian Vivah FAQ Section -->
+<section class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions (FAQ)</h2>
+    
+   <div class="faq-container" style="max-height: 250px !important; overflow-y: scroll !important; padding-right: 10px !important; display: block !important;">
+        <!-- Question 1 -->
+        <div class="faq-item">
+            <button class="faq-question">Indian Vivah Matrimony par profile banana free hai? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Haan, Indian Vivah par register karna aur apni profile banana bilkul free hai. Aap basic details daal kar turant apni profile live kar sakte hain.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+            <button class="faq-question">Kya meri personal details aur photos safe rahengi? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Ji haan, aapki privacy hamari sabse badi priority hai. Hum 100% confidential service dete hain. Aap setting me jaakar control kar sakte hain ki aapki photo kaun dekh sakta hai aur kaun nahi.</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+            <button class="faq-question">Premium Membership ke kya fayde hain? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Premium member banne par aap sahi matches se direct call ya chat par baat kar sakte hain. Saath hi aapko Relationship Manager ki madad milti hai jo aapke liye perfect rishte dhoodhne me help karte hain.</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+            <button class="faq-question">Profile verify kaise hoti hai? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Fake profiles ko rokne ke liye hum government ID proof aur phone number verification karte hain. Verified profiles par ek green tick dikhta hai, jispar aap bina kisi chinta ke bharosa kar sakte hain.</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item">
+            <button class="faq-question">Relationship Manager hamari madad kaise karte hain? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Hamare experienced Relationship Managers aapke background aur pasand ko samajhte hain. Wo khud premium database se badiya matches select karte hain aur dono parivar ke beech baat-cheet aage badhate hain.</p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="faq-item">
+            <button class="faq-question">Kya hum India ke bahar rehne wale NRI matches bhi dhoodh sakte hain? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Haan bilkul! Indian Vivah par worldwide (USA, UK, Canada, UAE, etc.) rehne wale Indian aur NRI profiles ka ek bada aur exclusive database maujood hai.</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="faq-item">
+            <button class="faq-question">Main apne hisab se sahi jeevansathi kaise dhoodhu? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Aap hamare advanced search filters ka use kar sakte hain. Isme aap umar (age), padhai (education), naukri (profession), shehar (city), aur caste/religion ke hisab se perfect match filter kar sakte hain.</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="faq-item">
+            <button class="faq-question">Kya Indian Vivah par koi hidden charges bhi hain? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Nahi, hum bilkul transparent hain. Jo bhi plans website par dikhte hain sirf wahi fees hoti hai. Kisi bhi tarah ka koi extra ya hidden charge nahi liya jata.</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="faq-item">
+            <button class="faq-question">Kya main kisi boring ya pareshan karne wali profile ko block kar sakta hu? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Ji haan, agar koi aapko pareshan karta hai toh aap use turant block ya report kar sakte hain. Block karne ke baad wo profile aapki koi bhi detail nahi dekh payegi.</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="faq-item">
+            <button class="faq-question">Shaadi pakki hone ke baad kya main apni profile delete kar sakta hu? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Haan, jab aapko aapka sathi mil jaye, toh aap settings me jaakar apni profile ko jab chahein tab temporarily hide (chupa) sakte hain ya permanently delete kar sakte hain.</p>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+    <!-- Section 8: Contact & Support -->
+    <section class="section-container contact-section">
+        <h2 class="section-title">Contact & Support</h2>
+        <div class="contact-buttons">
+            
+        
+<!-- 🌟 यह लिंक बिना वेबसाइट खोले सीधे मोबाइल का व्हाट्सएप ऐप ही खोलेगा 🌟 -->
+<a href="whatsapp://send?phone=918982523577" class="c-btn whatsapp">WhatsApp Support</a>
+
+
+
+            <a href="tel:+918982523577" class="c-btn call">Call Us Now</a>
+            <a href="mailto:support@indianvivah.com" class="c-btn email">Email Support</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>Indian Vivah</h3>
+                <p>India's trusted matrimonial platform for all communities.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Contact Us</a>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Indian Vivah Matrimony. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+         <!-- 1. Pehle aapka purana footer band hoga -->
+
+    <!-- ==================== REAL PAYMENT METHODS POPUP BOX ==================== -->
+    <div class="plan-popup-overlay" id="planPopupOverlay">
+        <div class="plan-popup-card">
+            <button class="plan-popup-close" id="closePlanPopup">✕</button>
+            <h2 id="popupPlanName">Make Payment</h2>
+            <p>Apna manpasand plan active karne ke liye niche diye gaye kisi bhi option se payment karein.</p>
+            
+            <div class="payment-options-container" style="text-align: left; background: #fff8f8; padding: 15px; border-radius: 8px; border: 1px dashed #800020; margin-bottom: 20px;">
+                <div style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                    <strong style="color: #800020;">📱 Option 1: UPI Transfer</strong>
+                    <p style="margin: 3px 0 0 0; font-size: 14px; color: #333;">UPI ID: <span style="font-weight: bold; color: black;">indianvivah@upi</span></p>
+                </div>
+                <div style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; display: flex; align-items: center; gap: 15px;">
+                    <div>
+                        <strong style="color: #800020;">📸 Option 2: Scan QR Code</strong>
+                        <p style="margin: 3px 0 0 0; font-size: 13px; color: #666;">PhonePe, GPay, Paytm se scan karein.</p>
+                    </div>
+                    <div style="width: 70px; height: 70px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 11px; border: 1px solid #ccc; text-align: center;">[ QR Code ]</div>
+                </div>
+                
+            </div>
+
+            <!-- Dynamic Pay Now Button (Direct Page Redirect) -->
+            <div style="margin-top: 15px; margin-bottom: 15px;">
+                <a href="payment.html" style="text-decoration: none; width: 100%;">
+                    <button type="button" class="btn-popup-reg" style="width: 100%; background: linear-gradient(135deg, #11998e, #38ef7d) !important; color: white !important; border: none !important; padding: 12px !important; font-size: 16px !important; font-weight: bold !important; border-radius: 6px !important; cursor: pointer !important; box-shadow: 0 4px 12px rgba(56,239,125,0.2) !important;">
+                        💳 PAY NOW 
+                    </button>
+                </a>
+            </div>
+
+            
+             <div class="plan-popup-buttons">
+                <!-- 🛠️ SABSE JAROORI BADLAV: Yahan 91 ke baad apna asli 10-digit number bina kisi space ke likh dijiye -->
+                <!-- Jaise agar aapka number 9876543210 hai, toh aap link mein likhenge: phone=919876543210 -->
+                <a href="whatsapp://send?phone=918982523577" target="_blank" style="text-decoration: none; width: 100%;">
+                    <button type="button" class="btn-popup-reg" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                        <span>💬 Send Payment Screenshot on WhatsApp</span>
+                    </button>
+                </a>
+            </div>
+           
+        </div>
+    </div>
+    <!-- ========================================================================= -->
+
+
+        <!-- ==================== SAMMELAN REGISTRATION POPUP FORM ==================== -->
+    <div class="sammelan-popup-overlay" id="sammelanFormOverlay">
+        <div class="sammelan-form-card">
+            <!-- Close Button -->
+            <button class="sammelan-popup-close" id="closeSammelanForm">✕</button>
+            
+            <div class="sammelan-form-header">
+                <h2>INDIAN VIVAH MATRIMONY</h2>
+                <h3>सामूहिक विवाह सम्मेलन 2026</h3>
+                <p>वर-वधू पंजीयन, सहमति एवं सत्यापन प्रपत्र</p>
+            </div>
+
+            <form class="sammelan-real-form">
+                <!-- Section 1: Basic Type -->
+                <div class="sammelan-form-group radio-group">
+                    <label>प्रत्याशी का प्रकार (Type):</label>
+                    <label><input type="radio" name="candidate_type" required> वर (लड़का)</label>
+                    <label><input type="radio" name="candidate_type" required> वधू (लड़की)</label>
+                </div>
+
+                <!-- Section 2: Name & DOB -->
+                <div class="sammelan-form-row">
+                    <div class="sammelan-form-group">
+                        <label>प्रत्याशी का नाम (Name):</label>
+                        <input type="text" required placeholder="पूरा नाम लिखें">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>जन्म तिथि (D.O.B):</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+
+                <!-- Section 3: Birth Place & Time -->
+                <div class="sammelan-form-row">
+                    <div class="sammelan-form-group">
+                        <label>जन्म स्थान (Birth Place):</label>
+                        <input type="text" placeholder="शहर/गांव का नाम">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>जन्म समय (Birth Time):</label>
+                        <input type="time">
+                    </div>
+                </div>
+
+                <!-- Section 4: Height, Complexion & Manglik -->
+                <div class="sammelan-form-row triple-row">
+                    <div class="sammelan-form-group">
+                        <label>ऊंचाई (Height):</label>
+                        <input type="text" placeholder="जैसे: 5'5 Inch">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>रंग (Complexion):</label>
+                        <input type="text" placeholder="गोरा / गेहूंआ">
+                    </div>
+                    <div class="sammelan-form-group options-group">
+                        <label>मांगलिक है?:</label>
+                        <select>
+                            <option>हाँ</option>
+                            <option>आंशिक</option>
+                            <option selected>नहीं</option>
+                            <option>पता नहीं</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Section 5: Education & Caste -->
+                <div class="sammelan-form-row">
+                    <div class="sammelan-form-group">
+                        <label>शिक्षा (Education):</label>
+                        <input type="text" placeholder="जैसे: BA, B.Com, MBA">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>गोत्र / जाति (Caste):</label>
+                        <input type="text" required placeholder="अपनी जाति/समाज लिखें">
+                    </div>
+                </div>
+
+                <!-- Section 6: Mama Gotra & Marital Status -->
+                <div class="sammelan-form-row">
+                    <div class="sammelan-form-group">
+                        <label>मामा गोत्र (Mother's Side Gotra):</label>
+                        <input type="text" placeholder="मामा का गोत्र">
+                    </div>
+                    <div class="sammelan-form-group options-group">
+                        <label>वैवाहिक स्थिति (Status):</label>
+                        <select>
+                            <option>अविवाहित (Single)</option>
+                            <option>तलाकशुदा (Divorced)</option>
+                            <option>विधवा/विधुर (Widowed)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Section 7: Job & Income -->
+                <div class="sammelan-form-row triple-row">
+                    <div class="sammelan-form-group">
+                        <label>व्यवसाय स्वयं (Job/Business):</label>
+                        <input type="text" placeholder="क्या काम करते हैं">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>पद (Designation):</label>
+                        <input type="text" placeholder="जैसे: मैनेजर, क्लर्क">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>वार्षिक आय (Annual Income):</label>
+                        <input type="text" placeholder="सालाना कमाई">
+                    </div>
+                </div>
+
+                <!-- Section 8: Family Details & Phone -->
+                <div class="sammelan-form-row triple-row">
+                    <div class="sammelan-form-group">
+                        <label>भाई (संख्या/विवरण):</label>
+                        <input type="text" placeholder="जैसे: 2 भाई">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>बहन (संख्या/विवरण):</label>
+                        <input type="text" placeholder="जैसे: 1 बहन">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>प्रत्याशी का मोबाइल नंबर:</label>
+                        <input type="tel" required placeholder="10 अंकों का नंबर">
+                    </div>
+                </div>
+
+                <!-- Section 9: Parents Details -->
+                <div class="sammelan-form-row">
+                    <div class="sammelan-form-group">
+                        <label>पिता का नाम (Father's Name):</label>
+                        <input type="text" required placeholder="पिता का पूरा नाम">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>माता का नाम (Mother's Name):</label>
+                        <input type="text" required placeholder="माता का नाम">
+                    </div>
+                </div>
+
+                <!-- Section 10: Father's Job & Income -->
+                <div class="sammelan-form-row triple-row">
+                    <div class="sammelan-form-group">
+                        <label>पिता का व्यवसाय:</label>
+                        <input type="text" placeholder="पिता क्या करते हैं">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>आय (मासिक):</label>
+                        <input type="text" placeholder="महीने की कमाई">
+                    </div>
+                    <div class="sammelan-form-group">
+                        <label>पिता का नंबर:</label>
+                        <input type="tel" placeholder="मोबाइल नंबर">
+                    </div>
+                </div>
+
+                <!-- Section 11: Full Address -->
+                <div class="sammelan-form-group text-area-full">
+                    <label>पूर्ण पता (Full Address):</label>
+                    <input type="text" required placeholder="मकान नंबर, गली, शहर, जिला, राज्य">
+                </div>
+
+                <!-- Section 12: Photo Upload Option -->
+                <div class="sammelan-form-group text-area-full" style="background: #fff8f8; padding: 10px; border-radius: 6px; border: 1px dashed #800020;">
+                    <label style="color: #800020; font-weight: bold;">📸 पासपोर्ट साइज फोटो अपलोड करें (Upload Passport Photo):</label>
+                    <input type="file" accept="image/*" style="border: none; background: none; padding: 5px 0;">
+                </div>
+                <!-- ==================== NEW: NIYAM, SHARTEIN & GHOSANA BLOCK ==================== -->
+                <div class="sammelan-legal-box" style="margin-top: 25px; border-top: 2px solid #800020; padding-top: 20px;">
+                    
+                    <!-- Part 1: Important Rules Scroll Box -->
+                    <h3 style="color: #800020; font-size: 16px; margin-bottom: 10px;">📋 महत्वपूर्ण नियम, शर्तें एवं दिशा-निर्देश (Important Rules)</h3>
+                    <div class="sammelan-rules-scroll" style="background: #fcfcfc; border: 1px solid #ddd; padding: 15px; border-radius: 6px; height: 150px; overflow-y: auto; font-size: 13px; color: #444; line-height: 1.6; text-align: left; margin-bottom: 20px;">
+                        1. यह सामूहिक विवाह सम्मेलन सामाजिक सेवा एवं वैवाहिक परिचय के उद्देश्य से आयोजित किया जा रहा है।<br>
+                        2. संस्था केवल परिचय, पंजीयन, समन्वय एवं आयोजन का कार्य करेगी।<br>
+                        3. विवाह संबंध स्थापित करने का अंतिम निर्णय दोनों परिवारों का स्वयं का होगा।<br>
+                        4. संस्था द्वारा प्रकाशित या उपलब्ध कराई गई जानकारी की स्वतंत्र जांच-पड़ताल करना संबंधित परिवारों की जिम्मेदारी होगी।<br>
+                        5. संस्था किसी भी वैवाहिक, सामाजिक, आर्थिक, पारिवारिक या कानूनी विवाद के लिए उत्तरदायी नहीं होगी।<br>
+                        6. प्रस्तुत समस्त जानकारी एवं दस्तावेज सत्य एवं वैध होना अनिवार्य है।<br>
+                        7. गलत, भ्रामक या तथ्य छिपाकर दी गई जानकारी पाए जाने पर पंजीयन तत्काल निरस्त किया जा सकता है।<br>
+                        8. कार्यक्रम स्थल पर शालीन व्यवहार एवं मर्यादा बनाए रखना अनिवार्य होगा।<br>
+                        9. संस्था को आवश्यकतानुसार नियमों में संशोधन करने का अधिकार सुरक्षित रहेगा।<br>
+                        10. प्रस्तुत पहचान दस्तावेज केवल सत्यापन हेतु उपयोग किए जाएंगे।
+                    </div>
+
+                    <!-- Part 2: Legal Declaration Checkboxes (Kanooni Ghosana) -->
+                    <h3 style="color: #800020; font-size: 16px; margin-bottom: 10px;">⚖️ कानूनी घोषणा एवं शपथपत्र (Legal Declaration)</h3>
+                    <div class="sammelan-checkboxes" style="text-align: left; display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+                        
+                        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #333; cursor: pointer;">
+                            <input type="checkbox" required style="width: auto; margin-top: 3px;">
+                            <span>मैं/हम शपथपूर्वक घोषणा करते हैं कि प्रत्याशी विवाह योग्य आयु का है, वैवाहिक स्थिति सही दर्ज की गई है और कोई भी महत्वपूर्ण तथ्य नहीं छिपाया गया है।</span>
+                        </label>
+
+                        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #333; cursor: pointer;">
+                            <input type="checkbox" required style="width: auto; margin-top: 3px;">
+                            <span>प्रस्तुत दस्तावेज सत्य एवं वैध हैं। प्रत्याशी किसी दबाव, भय, प्रलोभन या जबरदस्ती के बिना अपनी स्वतंत्र इच्छा से विवाह हेतु सहमत है।</span>
+                        </label>
+
+                        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #333; cursor: pointer;">
+                            <input type="checkbox" required style="width: auto; margin-top: 3px;">
+                            <span>विवाह संबंध स्थापित करने से पूर्व दोनों पक्ष स्वयं आवश्यक जांच एवं सत्यापन करेंगे। संस्था केवल आयोजनकर्ता है, विवाह की पक्षकार नहीं है।</span>
+                        </label>
+
+                        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #333; cursor: pointer;">
+                            <input type="checkbox" required style="width: auto; margin-top: 3px;">
+                            <span>भविष्य में उत्पन्न किसी भी विवाद (वैवाहिक, सामाजिक, आर्थिक, दहेज, संपत्ति आदि) हेतु संस्था, उसके पदाधिकारी या कर्मचारी उत्तरदायी नहीं होंगे।</span>
+                        </label>
+
+                        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #333; cursor: pointer;">
+                            <input type="checkbox" required style="width: auto; margin-top: 3px;">
+                            <span>यदि मेरे द्वारा दी गई कोई जानकारी असत्य पाई जाती है तो उसकी संपूर्ण कानूनी जिम्मेदारी मेरी स्वयं की होगी और मैं संस्था को सभी प्रकार के कानूनी विवादों से मुक्त रखता/रखती हूँ।</span>
+                        </label>
+
+                    </div>
+
+                    <!-- Part 3: Final Agreement Box (Sahmati Ghosana) -->
+                    <div style="background: #fff8f8; padding: 12px; border-radius: 6px; border: 1px solid #ffcccc; text-align: left; margin-bottom: 15px;">
+                        <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: bold; color: #800020; cursor: pointer;">
+                            <input type="checkbox" required style="width: auto;">
+                            <span>🤝 मैं प्रमाणित करता/करती हूँ कि मैंने सभी नियम पढ़ लिए हैं और मुझे पूर्णतः स्वीकार हैं।</span>
+                        </label>
+                    </div>
+
+                </div>
+                <!-- ================================================================================= -->
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-sammelan-submit">पंजीयन प्रपत्र जमा करें (SUBMIT FORM)</button>
+            </form>
+        </div>
+    </div>
+
+         <!-- ==================== REGISTRATION SUCCESS POPUP BOX ==================== -->
+    <div class="reg-success-overlay" id="regSuccessOverlay">
+        <div class="reg-success-card">
+            <button class="reg-success-close" id="closeRegSuccess">✕</button>
+            <div class="reg-success-icon">🎉</div>
+            <h2>Registration Successful!</h2>
+            <p>Indian Vivah Matrimony par aapka account kamyabi se ban gaya hai. Humne aapki profile ko verify karne ke liye bhej diya है।</p>
+            
+            <div class="reg-success-details">
+                <p>✨ Kripya apna jeevansathi dhoodhna shuru karne ke liye niche diye gaye button se apna manpasand plan active karein.</p>
+            </div>
+
+            <button type="button" class="btn-success-continue" id="btnContinueToPay">Continue to Premium Plans →</button>
+        </div>
+    </div>
+    <!-- ==================== DYNAMIC LOGIN POPUP BOX ==================== -->
+    <div class="login-popup-overlay" id="loginPopupOverlay">
+        <div class="login-popup-card">
+            <button class="login-popup-close" id="closeLoginPopup">✕</button>
+            <div class="login-popup-icon">🔑</div>
+            <h2>Welcome Back</h2>
+            <p>Apne account me login karein aur sahi jeevansathi dhundhna shuru karein.</p>
+            
+            <form class="real-login-form">
+                <div class="login-form-group">
+                    <label>Email ID / Mobile No:</label>
+                    <input type="text" placeholder="Enter Email or Phone" required>
+                </div>
+                <div class="login-form-group">
+                    <label>Password:</label>
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+                <div class="login-action-links" style="display: flex; justify-content: space-between; font-size: 13px; margin: 5px 0 15px 0;">
+                    <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                        <input type="checkbox" style="width: auto;"> Remember Me
+                    </label>
+                    <a href="#" style="color: #800020; text-decoration: none; font-weight: 500;">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-login-submit">LOGIN ACCOUNT</button>
+            </form>
+                        <!-- Purani 'Register Free' wali line hatakar ye naye text wali line likh dijiye -->
+            <p class="login-popup-footer" style="margin-top: 20px; font-size: 14px; color: #555;">
+                New to Indian Vivah? <a href="#" id="linkToRegFromLogin" style="color: #800020; font-weight: bold; text-decoration: none;">Sign Up </a>
+            </p>
+
+        </div>
+    </div>
+    <!-- ==================== HIGH-SECURITY OTP SIGN UP POPUP BOX ==================== -->
+    <div class="signup-popup-overlay" id="signupPopupOverlay">
+        <div class="signup-popup-card">
+            <button class="signup-popup-close" id="closeSignupPopup">✕</button>
+            <div class="signup-popup-icon">🛡️</div>
+            <h2>Create Secure Account</h2>
+            <p>Apna mobile aur safe password set karke OTP verify karein.</p>
+            
+            <form class="real-signup-form">
+                <div class="signup-form-group">
+                    <label>Mobile Number / Email ID:</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" id="signupUserContact" placeholder="Enter 10-digit Mobile or Email" required style="flex: 1;">
+                        <button type="button" id="btnSendOTP" style="background: #222; color: white; border: 1px solid #D4AF37; padding: 10px; font-size: 13px; font-weight: bold; border-radius: 6px; cursor: pointer;">Send OTP</button>
+                    </div>
+                </div>
+                
+                <!-- OTP Input Field (Shuru me disabled rahega) -->
+                <div class="signup-form-group">
+                    <label>Enter 4-Digit OTP:</label>
+                    <input type="text" id="signupOTPInput" placeholder="Enter OTP received" maxlength="4" disabled required>
+                    <small id="otpHintText" style="color: #666; font-size: 12px; margin-top: 4px; display: none;"></small>
+                </div>
+
+                <div class="signup-form-group">
+                    <label>Set Safe Password:</label>
+                    <input type="password" id="signupPassword" placeholder="Create new password" required>
+                </div>
+
+                <button type="submit" class="btn-signup-submit" id="btnFinalSignUp" style="margin-top: 15px;">VERIFY & SIGN UP</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Premium Profile Lock Modal -->
+<div id="profileLockModal" class="profile-modal" style="display: none;">
+    <div class="profile-modal-content">
+        <span class="close-modal" onclick="closeProfileModal()">&times;</span>
+        <div class="lock-icon">🔒</div>
+        <h3>प्रोफाइल केवल मेंबर्स के लिए उपलब्ध है</h3>
+        <p class="modal-text-hindi">सच्चे और सुरक्षित रिश्तों के लिए सभी प्रोफाइल्स को लॉक रखा गया है। आप मेंबरशिप प्लान लेकर सभी प्रोफाइल्स देख सकते हैं।</p>
+        <p class="modal-text-english">To ensure privacy and security, profiles are visible to premium members only.</p>
+        
+        <!-- मेंबरशिप लेने के बाद लॉगिन/एक्सेस चेक करने का छोटा फॉर्म -->
+        <div class="access-form">
+            
+            
+            <button onclick="verifyMemberAccess()">प्रोफाइल अनलॉक करें</button>
+        </div>
+        
+        <div class="modal-footer-btn">
+            <a href="#plans" onclick="closeProfileModal()" class="view-plans-btn">मेंबरशिप प्लान देखें (View Plans)</a>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script> <!-- 3. Sabse aakhiri me script tag rahega -->
+</body>
+</html>
+
